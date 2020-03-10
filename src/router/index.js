@@ -8,6 +8,7 @@ import Welcome from "../components/Welcome"
 import Users from "../components/users/Users"
 import Roles from "../components/roles/Roles"
 import Rights from "../components/rights/Rights"
+import Categories from "../components/categories/Categories"
 
 const routes = [{
         path: "/",
@@ -26,7 +27,8 @@ const routes = [{
             { path: "/welcome", component: Welcome },
             { path: "/users", component: Users },
             { path: "/roles", component: Roles },
-            { path: "/rights", component: Rights }
+            { path: "/rights", component: Rights },
+            { path: "/categories", component: Categories }
         ]
     }
 ]
