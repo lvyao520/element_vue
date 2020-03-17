@@ -9,6 +9,7 @@ import Users from "../components/users/Users"
 import Roles from "../components/roles/Roles"
 import Rights from "../components/rights/Rights"
 import Categories from "../components/categories/Categories"
+import Params from "../components/params/Params"
 
 const routes = [{
         path: "/",
@@ -28,7 +29,8 @@ const routes = [{
             { path: "/users", component: Users },
             { path: "/roles", component: Roles },
             { path: "/rights", component: Rights },
-            { path: "/categories", component: Categories }
+            { path: "/categories", component: Categories },
+            { path: "/params", component: Params }
         ]
     }
 ]

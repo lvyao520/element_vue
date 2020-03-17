@@ -109,7 +109,7 @@ export default {
   display: flex;
   align-items: center;
 }
-/* 知识点：行高没有用 vertical-align不是居中*/
+/* 知识点：行高没有用 vertical-align不是居中,可以用flex加line-height*/
 /* .el-header img{
   vertical-align: middle;
   line-height: 60px;

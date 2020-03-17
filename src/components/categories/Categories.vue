@@ -1,5 +1,5 @@
 <template>
-<!-- 为了测试第一次新建分支和已有分支push代码的差别 -->
+  <!-- 为了测试第一次新建分支和已有分支push代码的差别 -->
   <div class="categories">
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path: '/welcome' }">首页</el-breadcrumb-item>
@@ -55,7 +55,7 @@
         label-width="100px"
         class="demo-ruleForm"
       >
-        <el-form-item label="活动名称" prop="name" >
+        <el-form-item label="活动名称" prop="name">
           <el-input v-model="cateFormData.name"></el-input>
         </el-form-item>
         <el-form-item label="父级分类">
@@ -87,7 +87,7 @@ export default {
         pagenum: 1,
         pagesize: 5
       },
-      parentCateValue:[],
+      parentCateValue: [],
       cateFormData: {
         name: "",
         parentCate: ""
@@ -96,7 +96,7 @@ export default {
         name: [
           { required: true, message: "请输入活动名称", trigger: "blur" },
           { min: 3, max: 5, message: "长度在 3 到 5 个字符", trigger: "blur" }
-        ],
+        ]
       },
       cateDialogVisible: false,
       categoriesList: [],
@@ -122,14 +122,14 @@ export default {
           template: "operate"
         }
       ],
-      parentCateProps:{
-        expandTrigger: 'hover',
-        value:"cat_id",
-        label:"cat_name",
-        children:"children",
-        checkStrictly:true,
+      parentCateProps: {
+        expandTrigger: "hover",
+        value: "cat_id",
+        label: "cat_name",
+        children: "children",
+        checkStrictly: true
       },
-      parentCateOptions:[]
+      parentCateOptions: []
     };
   },
   created() {
@@ -161,17 +161,17 @@ export default {
       this.cateDialogVisible = true;
     },
     // 监听对话框关闭事件
-    closeCateDialog(){
-      this.$refs.cateRef.resetFields()
+    closeCateDialog() {
+      this.$refs.cateRef.resetFields();
       // 知识点：级联选择器清空是清空的v-model
-      this.parentCateValue=[]
+      this.parentCateValue = [];
     }
   }
 };
 </script>
 
 <style scoped>
-.el-cascader{
-  width:100%;
+.el-cascader {
+  width: 100%;
 }
 </style>
