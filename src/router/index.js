@@ -12,6 +12,7 @@ import Categories from "../components/categories/Categories"
 import Params from "../components/params/Params"
 import Goods from "../components/goods/Goods"
 import Add from "../components/add/Add"
+import Order from "../components/order/Order"
 
 const routes = [{
         path: "/",
@@ -34,7 +35,9 @@ const routes = [{
             { path: "/categories", component: Categories },
             { path: "/params", component: Params },
             { path: "/goods", component: Goods },
-            { path: "/goods/add", component: Add }
+            { path: "/goods/add", component: Add },
+            { path: "/orders", component: Order }
+
         ]
     }
 ]
