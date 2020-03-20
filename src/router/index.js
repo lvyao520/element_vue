@@ -10,6 +10,8 @@ import Roles from "../components/roles/Roles"
 import Rights from "../components/rights/Rights"
 import Categories from "../components/categories/Categories"
 import Params from "../components/params/Params"
+import Goods from "../components/goods/Goods"
+import Add from "../components/add/Add"
 
 const routes = [{
         path: "/",
@@ -30,7 +32,9 @@ const routes = [{
             { path: "/roles", component: Roles },
             { path: "/rights", component: Rights },
             { path: "/categories", component: Categories },
-            { path: "/params", component: Params }
+            { path: "/params", component: Params },
+            { path: "/goods", component: Goods },
+            { path: "/goods/add", component: Add }
         ]
     }
 ]
